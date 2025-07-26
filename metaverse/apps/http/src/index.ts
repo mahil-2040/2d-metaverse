@@ -1,7 +1,8 @@
 import  express  from "express";
 import { router } from "./routes/v1";
+import path from "path";
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config({path: path.join(__dirname,"../../.env")});
 
 const app = express();
 
