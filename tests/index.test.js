@@ -231,7 +231,6 @@ describe("User avatar information", () => {
         const currentAvatar = response.data.avatars.find(x => x.id == avatarId);
         expect(currentAvatar).toBeDefined()
     })
-
 })
 
 describe("Space information", () => {
